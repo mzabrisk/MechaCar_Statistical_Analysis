@@ -11,7 +11,7 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 
 
 
-![]()
+![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/linear_regression_to_predict_mpg.png)
 
 
 ## Summary Statistics on Suspension Coils
@@ -19,7 +19,12 @@ Does this linear model predict mpg of MechaCar prototypes effectively? Why or wh
 #QUESTIONS FROM THE CHALLENGE
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
-![]()
+Total summary statistics:
+![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/total_summary.png)
+
+Summary statistics by lot:
+![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/lot_summary.png)
+
 perform ANOVA???
 
 
@@ -28,7 +33,19 @@ perform ANOVA???
 #QUESTIONS FROM THE CHALLENGE
 briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
 
-![]()
+T-test across all lots:
+![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/t_test_across_all_lots.png)
+
+T-test for lot 1:
+![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/lot1_t_test.png)
+
+
+
+T-test for lot 2:
+![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/lot2_t_test.png)
+
+T-test for lot 3: 
+![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/lot3_t_test.png)
 
 
 ## Study Design: MechaCar vs Competition
