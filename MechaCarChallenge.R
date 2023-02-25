@@ -2,7 +2,7 @@ library(tidyverse)
 
 # PART 1
 # read in data
-car_data <- read_csv('Starter_Code/MechaCar_mpg.csv')
+car_data <- read_csv('Data/MechaCar_mpg.csv')
 
 # run linear regression
 lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = car_data) %>% summary()
@@ -10,7 +10,7 @@ lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AW
 #R-squared = 0.7149; p-value = 5.35e-11
 
 # PART 2
-coil_data <- read_csv('Starter_Code/Suspension_Coil.csv')
+coil_data <- read_csv('Data/Suspension_Coil.csv')
 
 #create total_summary df
 total_summary <- coil_data %>% summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))
@@ -22,7 +22,6 @@ lot_summary <- coil_data %>% group_by(Manufacturing_Lot) %>%
   summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))
 
 #PART 3
-?t.test()
 
 #T-Test across all lots compared to population mean
 t.test(coil_data$PSI, mu=1500)
