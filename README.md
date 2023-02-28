@@ -1,14 +1,14 @@
 # MechaCar_Statistical_Analysis
 
 ## Project Overview
-We are working for a company called AutosRUs, and have asked to perform an analysis of a new line of cars known as the MechaCar. WE are attempting to determine what factors play the largest role in mpg as well as analyze production quality of our suspension coils.
+We are working for a company called AutosRUs, and have been asked to perform an analysis of a new line of cars known as the MechaCar. We are attempting to determine what factors play the largest role in mpg as well as analyze production quality of our suspension coils.
 
 ## Linear Regression to Predict MPG
 
 
 ![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/linear_regression_to_predict_mpg.png)
 
-Of the variables tested, vehicle_length and ground_clearance were significant. The slope of the line is considereed to be non-zero: since our null hypothesis was that the slope of the line was zero, and our p-value for our model was 5.35e-11, we are able to reject the null hypothesis (i.e. the slope of the line is non-zero). The R-squared value for this model is 0.7149, so it is considered a good model for predicting MechaCar prototype mpg.
+Of the variables tested, vehicle_length and ground_clearance were significant. The slope of the line is considered to be non-zero: since our null hypothesis was that the slope of the line was zero, and our p-value for our model was 5.35e-11, we are able to reject the null hypothesis (i.e. the slope of the line is non-zero). The R-squared value for this model is 0.7149, so it is considered a good model for predicting MechaCar prototype mpg.
 
 
 ## Summary Statistics on Suspension Coils
