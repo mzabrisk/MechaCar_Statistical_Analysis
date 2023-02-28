@@ -35,14 +35,14 @@ Considering the design suspension requirements that the variance of the PSI cann
 
 ![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/t_test_across_all_lots.png)
 
-Running a t-test using all lots combined as the sample against the population mean of 1500 PSI, the p-value is 0.06028. With significantce threshold of 0.05, we can conclude that there is no difference between the sample PSI and the popultaion PSI.
+Running a t-test using all lots combined as the sample against the population mean of 1500 PSI, the p-value is 0.06028. With significance threshold of 0.05, we can conclude that there is no difference between the sample PSI and the popultaion PSI.
 
 ### T-test for lot 1:
 
 
 ![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/lot1_t_test.png)
 
-Running a t-test using lot 1 as the sample against the population mean of 1500 PSI, the p-value is 1. With significantce threshold of 0.05, we can conclude that there is no difference between the sample PSI and the popultaion PSI.
+Running a t-test using lot 1 as the sample against the population mean of 1500 PSI, the p-value is 1. With significance threshold of 0.05, we can conclude that there is no difference between the sample PSI and the popultaion PSI.
 
 
 
@@ -51,27 +51,39 @@ Running a t-test using lot 1 as the sample against the population mean of 1500 P
 
 ![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/lot2_t_test.png)
 
-Running a t-test using lot 2 as the sample against the population mean of 1500 PSI, the p-value is 0.6072. With significantce threshold of 0.05, we can conclude that there is no difference between the sample PSI and the popultaion PSI.
+Running a t-test using lot 2 as the sample against the population mean of 1500 PSI, the p-value is 0.6072. With significance threshold of 0.05, we can conclude that there is no difference between the sample PSI and the popultaion PSI.
 
 ### T-test for lot 3: 
 
 
 ![](https://github.com/mzabrisk/MechaCar_Statistical_Analysis/blob/8fd8af1682035397463e24ad362ae621c395a2d5/images/lot3_t_test.png)
 
-Running a t-test using lot 3 as the sample against the population mean of 1500 PSI, the p-value is 0.04168. With significantce threshold of 0.05, we can conclude that there is a difference between the sample PSI and the popultaion PSI.
+Running a t-test using lot 3 as the sample against the population mean of 1500 PSI, the p-value is 0.04168. With significance threshold of 0.05, we can conclude that there is a difference between the sample PSI and the popultaion PSI.
 
 
 ## Study Design: MechaCar vs Competition
 
-#QUESTIONS FROM THE CHALLENGE
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+For our study, we are most concerned with fuel efficiency, and how our car performs against our competition. We will be testing both city and highway fuel efficiency, measured in miles per gallon (MPG).
 
-In your description, address the following questions:
 
-What metric or metrics are you going to test?
 
-What is the null hypothesis or alternative hypothesis?
+**Null Hypothesis 1:** There is no difference in city fuel efficiency between our car and the competition.
 
-What statistical test would you use to test the hypothesis? And why?
 
-What data is needed to run the statistical test?
+
+**Alternative Hypothesis 1:** There is a difference in city fuel efficience between our car and the competition.
+
+
+
+**Null Hypothesis 2:** There is no difference in highway fuel efficiency between our car and the competition.
+
+
+
+**Alternative Hypothesis 2:** There is a difference in highway fuel efficience between our car and the competition.
+
+
+
+To test each null hypothesis we would use a two-sampled t-test. The two-sample t-test will tell us whether or not there is a statistical difference between a sample consisting of our cars' MPG, vs a sample consisting of our competitors cars' MPG. If we are comparing ourselves to many competitors, we would perform an ANOVA first to determine whether or not performing the t-tests is necessary.
+
+
+To perform this study and run the statistical tests, we would need to collect MPG data on our cars and our competitors cars in both highway driving and city driving scenarios. More simply, we would collect miles driven and gallons consumed. The city cohort would exclusively drive on city streets, and the highway cohort would exclusively drive on highways.

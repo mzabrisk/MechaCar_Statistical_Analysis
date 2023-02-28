@@ -31,6 +31,8 @@ t.test(coil_data$PSI, mu=1500)
 #T-Test for lot1 compared to population mean
 lot1_data <- subset(coil_data, Manufacturing_Lot == 'Lot1')
 lot1_data$PSI %>% t.test(mu=1500)
+
+t.test(lot1_data$PSI,mu=1500)
 # p-value = 1. Assuming threshold of 0.05, 
 # fail to reject null hypothesis (i.e. no significant difference between sample and pop mean)
 
